@@ -1,0 +1,43 @@
+
+# network settings
+
+config "common_settings" "common_settings"
+	option 1stdns	'192.168.1.100'
+	option 2nddns	'192.168.0.100'
+        option run_localdns     '1'
+        option run_igmpproxy    '0'
+	option default_gw	'192.168.1.6'
+        option network_mode     'advanced'
+	option reply_timeout	'3'
+	option retry_count	'3'
+	option cycle_timeout	'5'
+
+config "service" "service0"
+        option service_name     'Internet'
+        option wan_type 	'Untagged'
+        option vlan_id  	''
+        option wan_protocol     'Static'
+        option get_gw   	'0'
+        option get_dns  	'0'
+	option wan_ip	'192.168.1.160'
+        option wan_netmask      '255.255.255.0'
+        option pppoe_user       'user'
+	option pppoe_psw   	'password'
+        option pppoe_sname      ''
+        option pppoe_mtu        '1500'
+        option web_from_wan     '1'
+        option telnet_from_wan  '1'
+        option ftp_from_wan     '1'
+        option ssh_from_wan  	'1'
+	option connection	'wired'
+	option mtu	'1500'
+
+
+
+
+
+
+
+
+
+

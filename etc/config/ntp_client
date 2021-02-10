@@ -1,0 +1,4 @@
+
+config "ntp_client" "ntp"
+	option enable 	'0'
+

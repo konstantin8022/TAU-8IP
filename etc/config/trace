@@ -1,0 +1,7 @@
+config config igmp
+    option enable 0
+    option mode   syslog
+
+config config pbx
+    option enable 0
+    option mode syslog

@@ -1,0 +1,8 @@
+
+
+config "timezone" "timezone"
+	option posixtz	'MSK-4'
+	option zoneinfo	'Europe/Moscow'
+
+
+

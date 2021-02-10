@@ -1,0 +1,32 @@
+config system
+	option hostname	OpenWrt
+
+
+config ftp ftp
+	option password user
+	option adm_password  'password'
+
+config wifi wifi
+        option mcast_bitrate 	54000
+        option enable 		0
+        option replicate 	1
+        option retry_count 	20
+        option auth_enable 	0
+        option auth_algs 	3
+
+config iptv iptv
+        option enable 0
+        option port 1234
+        
+config printserver printserver
+        option enable 0
+        
+config tr069 tr069
+        option enable 0
+        option URL 
+        option PeriodicInformEnable 
+        option PeriodicInformInterval 
+        option Username 
+        option Password 
+        option ConnectionRequestUsername 
+        option ConnectionRequestPassword 
